@@ -29,7 +29,7 @@ local Main_4 = Instance.new("ImageButton")
 --Properties:
 
 RainbowHubAnimatronicWorld.Name = "RainbowHubAnimatronicWorld"
-RainbowHubAnimatronicWorld.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+RainbowHubAnimatronicWorld.Parent = game.Core
 RainbowHubAnimatronicWorld.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 RainbowHubAnimatronicWorld.ResetOnSpawn = false
 
