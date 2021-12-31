@@ -1,0 +1,5 @@
+if game.PlaceId == 155010111 then
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/Plusgaming2/RainbowHub/scripts/Animatronic%20World%20!', true))()
+else
+  print("Game not supported! -- Rainbow hub")
+end
