@@ -1,5 +1,556 @@
-if game.PlaceId == 155010111 then
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/Plusgaming2/RainbowHub/scripts/Animatronic%20World%20!', true))()
-else
-  print("Game not supported! -- Rainbow hub")
+-- Made by Plus gaming
+-- 5x9x7x2x7x9#9723
+
+-- Instances:
+
+local RainbowHubMain = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Main_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Home = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Scripts = Instance.new("TextButton")
+local Frame_3 = Instance.new("Frame")
+local Search = Instance.new("TextBox")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Main_3 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local Main_4 = Instance.new("ImageButton")
+
+--Properties:
+
+RainbowHubMain.Name = "RainbowHubMain"
+RainbowHubMain.Parent = game.CoreGui
+RainbowHubMain.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+RainbowHubMain.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = RainbowHubMain
+Main.AnchorPoint = Vector2.new(0.5, 0.5)
+Main.BackgroundColor3 = Color3.fromRGB(46, 255, 0)
+Main.Position = UDim2.new(0.5, 0, 0.5, 0)
+Main.Size = UDim2.new(0.400000006, 0, 0.5, 0)
+
+UICorner.CornerRadius = UDim.new(0.0250000004, 0)
+UICorner.Parent = Main
+
+Main_2.Name = "Main"
+Main_2.Parent = Main
+Main_2.AnchorPoint = Vector2.new(0.5, 0.5)
+Main_2.BackgroundColor3 = Color3.fromRGB(24, 26, 27)
+Main_2.ClipsDescendants = true
+Main_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+Main_2.Size = UDim2.new(0.980000019, 0, 0.970000029, 0)
+
+UICorner_2.CornerRadius = UDim.new(0.0250000004, 0)
+UICorner_2.Parent = Main_2
+
+Frame.Parent = Main_2
+Frame.AnchorPoint = Vector2.new(1, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(1, 0, 0, 0)
+Frame.Size = UDim2.new(0.949999988, 0, 0.063000001, 0)
+
+UICorner_3.CornerRadius = UDim.new(0.349999994, 0)
+UICorner_3.Parent = Frame
+
+Home.Name = "Home"
+Home.Parent = Frame
+Home.BackgroundColor3 = Color3.fromRGB(38, 255, 0)
+Home.BorderSizePixel = 0
+Home.Size = UDim2.new(0.100000001, 0, 1, 0)
+Home.Font = Enum.Font.SourceSansSemibold
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(0, 0, 0)
+Home.TextScaled = true
+Home.TextSize = 14.000
+Home.TextWrapped = true
+
+Frame_2.Parent = Home
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(0, 0, 1, 0)
+Frame_2.Size = UDim2.new(10, 0, 15, 0)
+
+ImageLabel.Parent = Frame_2
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.100000001, 0, 0.100000001, 0)
+ImageLabel.Size = UDim2.new(0.162744537, 0, 0.267712593, 0)
+
+TextLabel.Parent = ImageLabel
+TextLabel.AnchorPoint = Vector2.new(0, 1)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(1, 0, 1, 0)
+TextLabel.Size = UDim2.new(3, 0, 0.5, 0)
+TextLabel.Font = Enum.Font.SourceSansSemibold
+TextLabel.Text = "Welcome to Rainbox hub, %playernamehere%"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_2.Parent = ImageLabel
+TextLabel_2.AnchorPoint = Vector2.new(0, 1)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 2, 0)
+TextLabel_2.Size = UDim2.new(3, 0, 0.5, 0)
+TextLabel_2.Font = Enum.Font.SourceSansSemibold
+TextLabel_2.Text = "Made by Plus Gaming"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Frame
+Scripts.BackgroundColor3 = Color3.fromRGB(38, 255, 0)
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0.100000001, 0, 0, 0)
+Scripts.Size = UDim2.new(0.100000001, 0, 1, 0)
+Scripts.Font = Enum.Font.SourceSansSemibold
+Scripts.Text = "Scripts"
+Scripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+Scripts.TextScaled = true
+Scripts.TextSize = 14.000
+Scripts.TextWrapped = true
+
+Frame_3.Parent = Scripts
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.BackgroundTransparency = 1.000
+Frame_3.Position = UDim2.new(-1, 0, 1, 0)
+Frame_3.Size = UDim2.new(10, 0, 15, 0)
+Frame_3.Visible = false
+
+Search.Name = "Search"
+Search.Parent = Frame_3
+Search.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Search.BorderSizePixel = 0
+Search.Size = UDim2.new(1, 0, 0.0700000003, 0)
+Search.Font = Enum.Font.SourceSans
+Search.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+Search.PlaceholderText = "Search"
+Search.Text = ""
+Search.TextColor3 = Color3.fromRGB(255, 255, 255)
+Search.TextScaled = true
+Search.TextSize = 14.000
+Search.TextWrapped = true
+
+ScrollingFrame.Parent = Search
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 1, 0)
+ScrollingFrame.Size = UDim2.new(1, 0, 13.1999998, 0)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
+
+UIGridLayout.Parent = ScrollingFrame
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 0, 0, 1)
+UIGridLayout.CellSize = UDim2.new(1, 0, 0, 20)
+
+Main_3.Name = "Main"
+Main_3.Parent = Main_2
+Main_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Main_3.BorderSizePixel = 0
+Main_3.Size = UDim2.new(0.0500000007, 0, 1, 0)
+
+UICorner_4.CornerRadius = UDim.new(0.300000012, 0)
+UICorner_4.Parent = Main_3
+
+Main_4.Name = "Main"
+Main_4.Parent = Main_3
+Main_4.AnchorPoint = Vector2.new(0, 1)
+Main_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_4.BackgroundTransparency = 1.000
+Main_4.Position = UDim2.new(0, 0, 1, 0)
+Main_4.Size = UDim2.new(1, 0, 0.0799999982, 0)
+Main_4.Image = "rbxassetid://8299017339"
+
+-- Module Scripts:
+
+local fake_module_scripts = {}
+
+do -- ScrollingFrame.Scripts
+	local script = Instance.new('ModuleScript', ScrollingFrame)
+	script.Name = "Scripts"
+	local function module_script()
+		local module = {
+			[1] = {
+				Name = "Animatronic World !";
+				Script = 'https://raw.githubusercontent.com/Plusgaming2/RainbowHub/scripts/Animatronic%20World%20!'
+			}
+		}
+		
+		return module
+		
+	end
+	fake_module_scripts[script] = module_script
 end
+
+
+-- Scripts:
+
+local function CRGMREL_fake_script() -- Home.RainbowGui 
+	local script = Instance.new('LocalScript', Home)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local e = 0.1
+	game:GetService("RunService").RenderStepped:Connect(function(dt)
+		pcall(function()
+			e += 0.025 * (dt * 10)
+			script.Parent.BackgroundColor3 = Color3.fromHSV(e, 1, 1)
+			if e >= 1 then
+				script.Parent.BackgroundColor3 = Color3.fromHSV(0,1,1)
+				e = 0
+			end
+		end)
+	end)
+end
+coroutine.wrap(CRGMREL_fake_script)()
+local function NBHYLR_fake_script() -- TextLabel.RainbowGui 
+	local script = Instance.new('LocalScript', TextLabel)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local e = 0.1
+	script.Parent.Text = "Welcome to Rainbow Hub, ".. game.Players.LocalPlayer.DisplayName
+	game:GetService("RunService").RenderStepped:Connect(function(dt)
+		pcall(function()
+			e += 0.025 * (dt * 10)
+			script.Parent.TextColor3 = Color3.fromHSV(e, 1, 1)
+			if e >= 1 then
+				script.Parent.TextColor3 = Color3.fromHSV(0,1,1)
+				e = 0
+			end
+		end)
+	end)
+end
+coroutine.wrap(NBHYLR_fake_script)()
+local function CCTY_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.BackgroundTransparency = 1
+	script.Parent.Image = game.Players:GetUserThumbnailAsync(plr.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size100x100)
+end
+coroutine.wrap(CCTY_fake_script)()
+local function EKVH_fake_script() -- TextLabel_2.RainbowGui 
+	local script = Instance.new('LocalScript', TextLabel_2)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local e = 0.1
+	script.Parent.Text = "Welcome to Rainbow Hub, ".. game.Players.LocalPlayer.DisplayName
+	game:GetService("RunService").RenderStepped:Connect(function(dt)
+		pcall(function()
+			e += 0.025 * (dt * 10)
+			script.Parent.TextColor3 = Color3.fromHSV(e, 1, 1)
+			if e >= 1 then
+				script.Parent.TextColor3 = Color3.fromHSV(0,1,1)
+				e = 0
+			end
+		end)
+	end)
+end
+coroutine.wrap(EKVH_fake_script)()
+local function COKD_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local current = script.Parent.Home
+	
+	local lerping = false
+	
+	local function Lerp(a, b, c)
+		return a + (b - a) * c
+	end
+	
+	for i, v in pairs(script.Parent:GetChildren()) do
+		if v:IsA("TextButton") then
+			v.MouseButton1Click:Connect(function()
+				if not lerping then
+					if v ~= current then
+						lerping = true
+						v.Frame.AnchorPoint = Vector2.new(1,0)
+						v.Frame.Visible = true
+						current.Frame.AnchorPoint = Vector2.new(0,0)
+						spawn(function()
+							for i = 0,1,0.01 do
+								current.Frame.AnchorPoint = Vector2.new(Lerp(current.Frame.AnchorPoint.X, 1, i), Lerp(current.Frame.AnchorPoint.Y, 0, i))
+								wait(0.02)
+							end
+						end)
+						for i = 0,1,0.01 do
+							v.Frame.AnchorPoint = Vector2.new(Lerp(v.Frame.AnchorPoint.X, 0, i), Lerp(v.Frame.AnchorPoint.Y, 0, i))
+							wait(0.02)
+						end
+						current.Frame.Visible = false
+						current = v
+						lerping = false
+					end
+				end
+			end)
+		end
+	end
+end
+coroutine.wrap(COKD_fake_script)()
+local function LOCAA_fake_script() -- Scripts.RainbowGui 
+	local script = Instance.new('LocalScript', Scripts)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local e = 0.2
+	game:GetService("RunService").RenderStepped:Connect(function(dt)
+		pcall(function()
+			e += 0.025 * (dt * 10)
+			script.Parent.BackgroundColor3 = Color3.fromHSV(e, 1, 1)
+			if e >= 1 then
+				script.Parent.BackgroundColor3 = Color3.fromHSV(0,1,1)
+				e = 0
+			end
+		end)
+	end)
+end
+coroutine.wrap(LOCAA_fake_script)()
+local function EPLEBDC_fake_script() -- ScrollingFrame.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local Stuff = require(script.Parent.Scripts)
+	
+	for _, v in pairs(Stuff) do
+		local button = Instance.new("TextButton", script.Parent)
+		button.BackgroundColor3 = Color3.fromRGB(255,0,0)
+		button.BorderSizePixel = 0
+		button.Text = v["Name"]
+		button.TextScaled = true
+		button.TextWrapped = true
+		button.Name = v["Name"]
+		button.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet(v["Script"], true))()
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.Parent:Destroy()
+		end)
+	end
+end
+coroutine.wrap(EPLEBDC_fake_script)()
+local function VLJW_fake_script() -- Search.LocalScript 
+	local script = Instance.new('LocalScript', Search)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	script.Parent.Changed:Connect(function(type)
+		if type == "Text" then
+			for i, v in pairs(script.Parent:GetChildren()) do
+				if v:IsA("TextButton") then
+					v.Parent = script.Parent.ScrollingFrame
+					v.Visible = true
+				end
+			end
+			for i, v in pairs(script.Parent.ScrollingFrame:GetChildren()) do
+				if not string.match(string.lower(v.Name), string.lower(script.Parent.Text)) then
+					v.Parent = script.Parent
+					v.Visible = false
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(VLJW_fake_script)()
+local function VUYL_fake_script() -- Main_4.LocalScript 
+	local script = Instance.new('LocalScript', Main_4)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local function lerp(a, b, t)
+		return a + (b - a) * t
+	end
+	script.Parent.Changed:Connect(function()
+		script.Parent.Size = UDim2.new(script.Parent.Size.X.Scale,script.Parent.Size.X.Offset,0,script.Parent.AbsoluteSize.X)
+	end)
+	script.Parent.MouseButton1Click:Connect(function()
+		for i, v in pairs(script.Parent.Parent.Parent.Parent:GetDescendants()) do
+			if (v.Name ~= "Main") and (v:IsA("GuiBase")) then
+				v:Destroy()
+			end
+		end
+		for i = 0,1,0.05 do
+			wait(0.075)
+			script.Parent.Parent.Parent.Parent.Size = script.Parent.Parent.Parent.Parent.Size:Lerp(UDim2.new(0.061, 0,0.123, 0), i)
+			script.Parent.Parent.Size = script.Parent.Parent.Size:Lerp(UDim2.new(1,0,1,0), i)
+		end
+		wait(1)
+		for i = 0,1,0.05 do
+			wait(0.075)
+			script.Parent.Parent.Parent.Parent.Size = script.Parent.Parent.Parent.Parent.Size:Lerp(UDim2.new(0, 0,0, 0), i)
+		end
+		script.Parent.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(VUYL_fake_script)()
+local function ELZK_fake_script() -- Main.RainbowGui 
+	local script = Instance.new('LocalScript', Main)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local e = 0
+	game:GetService("RunService").RenderStepped:Connect(function(dt)
+		pcall(function()
+			e += 0.025 * (dt * 10)
+			script.Parent.BackgroundColor3 = Color3.fromHSV(e, 1, 1)
+			if e >= 1 then
+				script.Parent.BackgroundColor3 = Color3.fromHSV(0,1,1)
+				e = 0
+			end
+		end)
+	end)
+end
+coroutine.wrap(ELZK_fake_script)()
+local function GODUIBT_fake_script() -- Main.Drag 
+	local script = Instance.new('LocalScript', Main)
+	local req = require
+	local require = function(obj)
+		local fake = fake_module_scripts[obj]
+		if fake then
+			return fake()
+		end
+		return req(obj)
+	end
+
+	local Lerp = function(a, b, t)
+		return a + (b - a) * t
+	end
+	local Drag = function(Click, Drag, Smoothness)
+		local plr = game.Players.LocalPlayer
+		local m = plr:GetMouse()
+		local clicked = false
+		local mx = m.X
+		local my = m.Y
+		local wantedpos = Vector2.new(Drag.Position.X.Offset, Drag.Position.Y.Offset)
+		if Click:IsA("GuiButton") then
+			Click.MouseButton1Down:Connect(function()
+				if ((m.X > Click.AbsolutePosition.X) and (m.Y > Click.AbsolutePosition.Y)) and ((m.X < (Click.AbsolutePosition.X + Click.AbsoluteSize.X)) and (m.Y < (Click.AbsolutePosition.Y + Click.AbsoluteSize.Y))) then
+					clicked = true
+					mx = m.X
+					my = m.Y
+					wantedpos = Vector2.new(Drag.Position.X.Offset, Drag.Position.Y.Offset)
+				end
+			end)
+			Click.MouseButton1Up:Connect(function()
+				clicked = false
+			end)
+			m.Button1Up:Connect(function()
+				clicked = false
+			end)
+			game:GetService("RunService").RenderStepped:Connect(function(dt)
+				if clicked then
+					wantedpos = Vector2.new(wantedpos.X - (m.X - mx), wantedpos.Y - (m.Y - my))
+					Drag.Position = UDim2.new(Drag.Position.X.Scale,Lerp(Drag.Position.X.Offset, wantedpos.X, Smoothness),Drag.Position.Y.Scale,Lerp(Drag.Position.Y.Offset, wantedpos.Y, Smoothness))
+					mx = m.X
+					my = m.Y
+				end
+			end)
+		else
+			m.Button1Down:Connect(function()
+				if ((m.X > Click.AbsolutePosition.X) and (m.Y > Click.AbsolutePosition.Y)) and ((m.X < (Click.AbsolutePosition.X + Click.AbsoluteSize.X)) and (m.Y < (Click.AbsolutePosition.Y + Click.AbsoluteSize.Y))) then
+					clicked = true
+					mx = m.X
+					my = m.Y
+					wantedpos = Vector2.new(Drag.Position.X.Offset, Drag.Position.Y.Offset)
+				end
+			end)
+			m.Button1Up:Connect(function()
+				clicked = false
+			end)
+			game:GetService("RunService").RenderStepped:Connect(function(dt)
+				if clicked then
+					wantedpos = Vector2.new(wantedpos.X - (mx - m.X), wantedpos.Y - (my - m.Y))
+					Drag.Position = UDim2.new(Drag.Position.X.Scale,Lerp(Drag.Position.X.Offset, wantedpos.X, Smoothness),Drag.Position.Y.Scale,Lerp(Drag.Position.Y.Offset, wantedpos.Y, Smoothness))
+					mx = m.X
+					my = m.Y
+				end
+			end)
+		end
+	end
+	
+	Drag(script.Parent,script.Parent, 0.15)
+end
+coroutine.wrap(GODUIBT_fake_script)()
